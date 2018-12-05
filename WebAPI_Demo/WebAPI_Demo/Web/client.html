@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Caculator Client</title>
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(":button").click(function () {
+                var value1 = $("#txtValue1").val();
+                var value2 = $("#txtValue2").val();
+                var arg = "value1=" + value1 + "&value2=" + value2;
+                var control = event.target || event.srcElement;
+                var id = control.id
+
+                //var urlString = "http://localhost:53460/api/math/";
+                var urlString = "/api/math/";
+
+                switch (id) {
+                    case 'btnAdd':
+                        urlString = urlString + "Add/?" + arg;
+                        break;
+                    case 'btnMinus':
+                        urlString = urlString + "Substract/?" + arg;
+                        break;
+                    case 'btnMultiply':
+                        urlString = urlString + "Multiply/?" + arg;
+                        break;
+                    case 'btnDivide':
+                        urlString = urlString + "Divide/?" + arg;
+                        break;
+                    default:
+                        urlString = urlString + "hello";
+
+                }
+
+                $.ajax({
+                    url: urlString,
+                    type: "GET",
+                    dataType: 'json',
+                    success: function (result) {
+                        $("#txtResult").val(result);
+
+                    },
+                    error: function (xhr, status, error) {
+                        var err = eval("(" + xhr.responseText + ")");
+                        $("#txtResult").val(err.Message)
+                    }
+                });
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <div style="text-align:center">
+        <h2>Calculator client - JQuery</h2>
+
+        <!-- Number type is not supported in IE9 and prior versions -->
+        Please enter Value1 :   <input type="number"
+                                       id="txtValue1" min="1" max="100"><br><br>
+        Please enter Value2 :   <input type="number"
+                                       id="txtValue2" min="1" max="100"><br /><br>
+        Result from Math API Service : <input type="text"
+                                              id="txtResult" disabled /><br /><br>
+        <input type="button" value="Add" id="btnAdd">
+        <input type="button" value="Substract" id="btnMinus">
+        <input type="button" value="Multiply" id="btnMultiply">
+        <input type="button" value="Divide" id="btnDivide">
+
+    </div>
+
+</body>
+</html>

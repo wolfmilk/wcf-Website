@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WcfWebsite", "http://localhost:50040", "{9DE535A3-6651-470A-A894-B519BDB209F2}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50040"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\week_6_7_tutorials\WEEK7_TUTORIAL\WcfWebsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50040\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50040"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\week_6_7_tutorials\WEEK7_TUTORIAL\WcfWebsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50040\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\Desktop\week_6_7_tutorials\WEEK7_TUTORIAL\WcfWebsite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ConsumeWCFTest(1)", "http://localhost:50387", "{A7B36BEA-82AB-486A-B539-9DB7370A0F74}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50387"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\week_6_7_tutorials\WEEK7_TUTORIAL\ConsumeWCFTest\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50387\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50387"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\week_6_7_tutorials\WEEK7_TUTORIAL\ConsumeWCFTest\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50387\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\Desktop\week_6_7_tutorials\WEEK7_TUTORIAL\ConsumeWCFTest\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{9DE535A3-6651-470A-A894-B519BDB209F2} = {9DE535A3-6651-470A-A894-B519BDB209F2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DE535A3-6651-470A-A894-B519BDB209F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE535A3-6651-470A-A894-B519BDB209F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B36BEA-82AB-486A-B539-9DB7370A0F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B36BEA-82AB-486A-B539-9DB7370A0F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
